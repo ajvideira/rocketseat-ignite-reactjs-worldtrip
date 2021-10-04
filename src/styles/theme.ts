@@ -5,14 +5,14 @@ export const theme = extendTheme({
     gray: {
       "900": "#181B23",
       "800": "#1F2029",
-      "700": "#353646",
-      "600": "#4B4D63",
+      "700": "#999999",
+      "600": "#47585B",
       "500": "#616480",
       "400": "#797D9A",
       "300": "#9699B0",
       "200": "#B3B5C6",
-      "100": "#D1D2DC",
-      "50": "#EEEEF2",
+      "100": "#DADADA",
+      "50": "#F5F8FA",
     },
   },
   fonts: {
@@ -23,7 +23,7 @@ export const theme = extendTheme({
     global: {
       body: {
         bg: "white",
-        color: "gray.50",
+        color: "gray.600",
       },
     },
   },
