@@ -18,7 +18,7 @@ export function Banner() {
   return (
     <Flex
       h={{ base: "163px", lg: "335px" }}
-      bgImage="/banner.jpg"
+      bgImage="/images/banner2.jpg"
       bgSize="cover"
       bgPosition={{ base: "100% 20%", lg: "100% 30%" }}
       p={{ base: "1.75rem 1rem 1.75rem", lg: "5rem 8.75rem 0" }}
@@ -46,7 +46,7 @@ export function Banner() {
       </Flex>
       {isWideVersion && (
         <Image
-          src="/airplane.svg"
+          src="/images/airplane.svg"
           h={{ md: "160px", lg: "293px" }}
           ml="auto"
           alt="Imagem de um avião"

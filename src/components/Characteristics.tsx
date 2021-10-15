@@ -28,11 +28,11 @@ export function Characteristics() {
         minWidth="158px"
       >
         {isWideVersion && (
-          <Image src="/cocktail.svg" h="85px" alt="Imagem de um drink" />
+          <Image src="/images/cocktail.svg" h="85px" alt="Imagem de um drink" />
         )}
         {!isWideVersion && (
           <Image
-            src="/ellipse.svg"
+            src="/images/ellipse.svg"
             h="8px"
             mr="0.5rem"
             alt="Marcador de item da lista"
@@ -54,11 +54,11 @@ export function Characteristics() {
         minWidth="85px"
       >
         {isWideVersion && (
-          <Image src="/surf.svg" h="85px" alt="Imagem de uma praia" />
+          <Image src="/images/surf.svg" h="85px" alt="Imagem de uma praia" />
         )}
         {!isWideVersion && (
           <Image
-            src="/ellipse.svg"
+            src="/images/ellipse.svg"
             h="8px"
             mr="0.5rem"
             alt="Marcador de item da lista"
@@ -80,11 +80,11 @@ export function Characteristics() {
         minWidth="113px"
       >
         {isWideVersion && (
-          <Image src="/tower.svg" h="85px" alt="Imagem de um prédio" />
+          <Image src="/images/tower.svg" h="85px" alt="Imagem de um prédio" />
         )}
         {!isWideVersion && (
           <Image
-            src="/ellipse.svg"
+            src="/images/ellipse.svg"
             h="8px"
             mr="0.5rem"
             alt="Marcador de item da lista"
@@ -106,11 +106,11 @@ export function Characteristics() {
         minWidth="100px"
       >
         {isWideVersion && (
-          <Image src="/museum.svg" h="85px" alt="Imagem de um museu" />
+          <Image src="/images/museum.svg" h="85px" alt="Imagem de um museu" />
         )}
         {!isWideVersion && (
           <Image
-            src="/ellipse.svg"
+            src="/images/ellipse.svg"
             h="8px"
             mr="0.5rem"
             alt="Marcador de item da lista"
@@ -132,11 +132,15 @@ export function Characteristics() {
         minWidth="101px"
       >
         {isWideVersion && (
-          <Image src="/earth.svg" h="85px" alt="Imagem do planeta Terra" />
+          <Image
+            src="/images/earth.svg"
+            h="85px"
+            alt="Imagem do planeta Terra"
+          />
         )}
         {!isWideVersion && (
           <Image
-            src="/ellipse.svg"
+            src="/images/ellipse.svg"
             h="8px"
             mr="0.5rem"
             alt="Marcador de item da lista"

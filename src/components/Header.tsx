@@ -9,7 +9,7 @@ export function Header() {
       h={{ base: "50px", lg: "100px" }}
     >
       <Image
-        src="/logo.svg"
+        src="/images/logo.svg"
         h={{ base: "20px", lg: "46px" }}
         alt="Logo da Worldtrip"
       />

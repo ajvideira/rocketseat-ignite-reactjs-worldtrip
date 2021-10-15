@@ -7,6 +7,7 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 import { Banner } from "../components/Banner";
+import { Carousel } from "../components/Carousel";
 import { Characteristics } from "../components/Characteristics";
 import { Header } from "../components/Header";
 
@@ -19,7 +20,7 @@ export default function Home() {
   });
 
   return (
-    <Flex direction="column" mb="2.5rem">
+    <Flex direction="column" mb={{ base: "1.5rem", lg: "2.5rem" }}>
       <Header />
       <Banner />
       <Characteristics />
@@ -41,6 +42,7 @@ export default function Home() {
         <br />
         Então escolha seu continente
       </Text>
+      <Carousel />
     </Flex>
   );
 }
