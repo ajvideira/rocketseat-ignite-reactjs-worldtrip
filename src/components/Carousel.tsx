@@ -72,7 +72,7 @@ export function Carousel({ continents }: CarouselProps) {
                       {continent.name}
                     </Heading>
                     <Heading
-                      mt={{ base: "0.75rem", lg: "1rem" }}
+                      mt={[3, 3, 4]}
                       fontWeight="bold"
                       fontSize={["sm", "sm", "2xl"]}
                       color="gray.100"
