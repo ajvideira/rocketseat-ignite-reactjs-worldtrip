@@ -1,5 +1,4 @@
 import {
-  Box,
   Flex,
   Heading,
   Image,
@@ -17,29 +16,29 @@ export function Banner() {
 
   return (
     <Flex
-      h={{ base: "163px", lg: "335px" }}
+      h={["163px", "163px", "335px"]}
       bgImage="/images/banner2.jpg"
       bgSize="cover"
-      bgPosition={{ base: "100% 20%", lg: "100% 30%" }}
-      p={{ base: "1.75rem 1rem 1.75rem", lg: "5rem 8.75rem 0" }}
+      bgPosition={["100% 20%", "100% 20%", "100% 30%"]}
+      p={["1.75rem 1rem", "1.75rem 1rem", "5rem 8.75rem 0"]}
       w="100%"
     >
       <Flex direction="column">
         <Heading
           fontWeight="medium"
-          lineHeight={{ base: "1.875rem", lg: "3.375rem" }}
-          fontSize={{ base: "1.25rem", lg: "2.25rem" }}
+          lineHeight={[8, 8, "tall"]}
+          fontSize={["xl", "xl", "4xl"]}
           color="gray.50"
         >
           5 Continentes, <br />
           infinitas possibilidades.
         </Heading>
         <Text
-          fontSize={{ base: "sm", lg: "xl" }}
-          lineHeight={{ base: "1.3125rem", lg: "1.875rem" }}
-          mt={{ base: "0.5rem", lg: "1.25rem" }}
+          maxW={["333px", "333px", "524px"]}
+          fontSize={["sm", "sm", "xl"]}
+          lineHeight={[5, 5, 8]}
+          mt={[2, 2, 5]}
           color="gray.100"
-          maxW={{ base: "333px", lg: "524px" }}
         >
           Chegou a hora de tirar do papel a viagem que você sempre sonhou.
         </Text>

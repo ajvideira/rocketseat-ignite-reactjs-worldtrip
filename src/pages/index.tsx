@@ -1,48 +1,44 @@
-import {
-  Box,
-  Flex,
-  Heading,
-  Image,
-  Text,
-  useBreakpointValue,
-} from "@chakra-ui/react";
-import { Banner } from "../components/Banner";
-import { Carousel } from "../components/Carousel";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import { Characteristics } from "../components/Characteristics";
+import { Carousel } from "../components/Carousel";
+import { Banner } from "../components/Banner";
 import { Header } from "../components/Header";
+import { GetStaticProps } from "next";
+import { Continent } from "../models/Continent";
+import { api } from "../services/api";
 
-export default function Home() {
-  const isWideVersion = useBreakpointValue({
-    base: false,
-    sm: false,
-    md: true,
-    lg: true,
-  });
+type HomeProps = {
+  continents: Continent[];
+};
 
+export default function Home({ continents }: HomeProps) {
   return (
-    <Flex direction="column" mb={{ base: "1.5rem", lg: "2.5rem" }}>
+    <Flex direction="column" mb={[6, 6, 10]}>
       <Header />
       <Banner />
       <Characteristics />
-      <Box
-        height="2px"
-        bg="gray.600"
-        w="90px"
-        m="0 auto"
-        mt={{ base: "2.25rem", lg: "5rem" }}
-      />
+      <Box height="2px" w="90px" bg="gray.600" mx="auto" mt={[9, 9, 20]} />
       <Text
         m="0 auto"
-        fontSize={{ base: "1.25rem", lg: "2.25rem" }}
+        fontSize={["2xl", "2xl", "4xl"]}
         textAlign="center"
-        fontWeight="500"
-        mt={{ base: "1.5rem", lg: "3.25rem" }}
+        fontWeight="medium"
+        mt={[6, 6, 14]}
       >
         Vamos nessa?
         <br />
         Então escolha seu continente
       </Text>
-      <Carousel />
+      <Carousel continents={continents} />
     </Flex>
   );
 }
+
+export const getStaticProps: GetStaticProps<HomeProps> = async () => {
+  const { data: continents } = await api.get<Continent[]>("/continents");
+  return {
+    props: {
+      continents,
+    },
+  };
+};

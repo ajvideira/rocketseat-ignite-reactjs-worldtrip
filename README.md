@@ -4,7 +4,7 @@
 <h3 align="center">Chapter #4</h3>
 <p align="center">
   <a href="#-Project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#hammer_and_wrench-Features">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-Layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-Technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-How-to-execute">How to execute</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-Licence">Licence</a>
@@ -18,13 +18,6 @@
 
 This is the Seventh challenge of ReactJS track of Ignite course from [Rocketseat](https://rocketseat.com.br/).
 
-## :hammer_and_wrench: Features
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-- [ ] Feature 4
-
 ## ✨ Technologies
 
 This project was developed with the technologies above:
@@ -36,11 +29,20 @@ This project was developed with the technologies above:
 - [Emotion](https://emotion.sh)
 - [Framer Motion](https://framer.com/motion)
 - [react-icons](https://react-icons.github.io/react-icons)
+- [axios](https://axios-http.com)
+- [json-sever](https://github.com/typicode/json-server)
+- [swiper](https://swiperjs.com)
+- [sass](https://sass-lang.com)
+
+## 🔖 Layout
+
+You can view the project layout through [this link](https://www.figma.com/file/VuSIee93l14KkGpqzngScy/Desafio-1-M%C3%B3dulo-4-ReactJS). You must have a [Figma](http://figma.com) account to access it.
 
 ## 🚀 How to execute
 
 - Clone the repository
 - Install de dependencies with `yarn`
+- run the server with `yarn server`
 - Run the application with `yarn dev`
 - Access [`localhost:3000`](http://localhost:3000) in your browser
 

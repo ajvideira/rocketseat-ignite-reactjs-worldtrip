@@ -1,0 +1,59 @@
+{
+  "continents": [
+    {
+      "id": 1,
+      "name": "Europa",
+      "title": "O continente mais antigo",
+      "description": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste.",
+      "image": "europe2.jpg",
+      "slug": "europa",
+      "countries": 50,
+      "languages": 234,
+      "topCities": 27
+    },
+    {
+      "id": 2,
+      "name": "África",
+      "title": "A vida natural em seu estado puro",
+      "description": "A África é o terceiro continente mais extenso com cerca de 30 milhões de quilômetros quadrados, cobrindo 20,3% da área total da terra firme do planeta. É o segundo continente mais populoso da Terra (atrás da Ásia) com cerca de um bilhão de pessoas, representando cerca de um sétimo da população mundial, e 54 países independentes. Tem se transformado na ultima década em uma continente cada vez mais católico.",
+      "image": "africa2.jpg",
+      "slug": "africa",
+      "countries": 54,
+      "languages": 2110,
+      "topCities": 3
+    },
+    {
+      "id": 3,
+      "name": "América",
+      "title": "O novo mundo ocidental",
+      "description": "América é o continente localizado no hemisfério ocidental e que se estende, no sentido norte-sul, desde o oceano Ártico até o cabo Horn, ao longo de cerca de 15 mil quilômetros. O seu extremo oriental insular (não continental) encontra-se na Groenlândia, o Nordostrundingen, enquanto o ocidental localiza-se nas Aleutas.",
+      "image": "america2.jpg",
+      "slug": "america",
+      "countries": 35,
+      "languages": 993,
+      "topCities": 13
+    },
+    {
+      "id": 4,
+      "name": "Ásia",
+      "title": "A terra do sol nascente",
+      "description": "A Ásia é o maior dos continentes, tanto em área como em população. Abrange um terço das partes sólidas da superfície da Terra e é responsável por abrigar quase três quintos da população mundial. A Ásia faz fronteira no lado ocidental com a África e com a Europa, e no lado oriental com o oceano Pacífico, a Oceania e, em menor proporção, com a América do Norte, pelo Estreito de Bering.",
+      "image": "asia2.jpg",
+      "slug": "asia",
+      "countries": 50,
+      "languages": 2322,
+      "topCities": 53
+    },
+    {
+      "id": 5,
+      "name": "Oceania",
+      "title": "A terra das coisas gigantes",
+      "description": "Oceania ou Oceânia é uma região geográfica composta por vários grupos de ilhas do oceano Pacífico (Polinésia, Melanésia e Micronésia). O termo Oceania foi criado em 1831 pelo explorador francês Dumont d'Urville. O termo é usado hoje em vários idiomas para designar uma região geográfica e política que compreende o continente da Austrália e ilhas do Oceano Pacífico adjacentes.",
+      "image": "oceania2.jpg",
+      "slug": "oceania",
+      "countries": 16,
+      "languages": 1250,
+      "topCities": 4
+    }
+  ]
+}
