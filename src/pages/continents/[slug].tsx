@@ -121,7 +121,7 @@ export default function ContinentPage({ continent }: ContinentPageProps) {
                 <Flex
                   justify="space-between"
                   alignItems="center"
-                  p="6"
+                  p="4"
                   border="1px"
                   borderColor="yellow.300"
                   borderTop="0"
@@ -129,12 +129,22 @@ export default function ContinentPage({ continent }: ContinentPageProps) {
                 >
                   <Box>
                     <Heading fontSize="xl" fontWeight="semibold">
-                      {city.name}
+                      {city.name}{" "}
+                      <Text as="span" fontSize="xs">
+                        {city.id}º
+                      </Text>
                     </Heading>
-                    <Text fontSize="md" mt="3" color="gray.700">
+                    <Text
+                      fontSize="md"
+                      mt="3"
+                      color="gray.700"
+                      isTruncated
+                      maxW="180px"
+                    >
                       {city.country}
                     </Text>
                   </Box>
+
                   <Image
                     src={`https://flagcdn.com/${city.countryCode}.svg`}
                     alt="sdadsa"
