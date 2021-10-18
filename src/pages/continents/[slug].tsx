@@ -1,6 +1,9 @@
 import {
+  Box,
   Flex,
+  Heading,
   Icon,
+  Image,
   Popover,
   PopoverArrow,
   PopoverBody,
@@ -33,7 +36,14 @@ export default function ContinentPage({ continent }: ContinentPageProps) {
       <Flex direction="column" mb={[6, 6, 10]}>
         <Header showBackButton />
         <ContinentBanner continent={continent} />
-        <Flex width="100%" maxW="1160px" mt={[6, 6, 20]} mx="auto" px="4">
+        <Flex
+          width="100%"
+          maxW="1160px"
+          mt={[6, 6, 20]}
+          mx="auto"
+          px="4"
+          direction="column"
+        >
           <SimpleGrid
             flex="1"
             columnGap="20"
@@ -52,7 +62,7 @@ export default function ContinentPage({ continent }: ContinentPageProps) {
             <Flex justify="space-between" alignItems="center">
               <Info title="países" value={continent.countries} />
               <Info title="línguas" value={continent.languages} />
-              <Info title="cidades +100" value={continent.topCities}>
+              <Info title="cidades +100" value={continent.cities.length}>
                 <Popover id="cities">
                   <PopoverTrigger>
                     <span title="Abrir informações sobre as cidades +100">
@@ -89,6 +99,54 @@ export default function ContinentPage({ continent }: ContinentPageProps) {
               </Info>
             </Flex>
           </SimpleGrid>
+          <Heading mt="20" fontSize="4xl" fontWeight="medium" lineHeight="tall">
+            Cidades +100
+          </Heading>
+          <SimpleGrid
+            mt="10"
+            columns={[1, null, 4]}
+            minChildWidth="256px"
+            spacing="30px"
+            mx={["auto", "auto", 0]}
+          >
+            {continent.cities.map((city) => (
+              <Box borderRadius="4px" w="256px" overflow="hidden" key={city.id}>
+                <Image
+                  src={`${city.image}`}
+                  alt={`${city.name}, ${city.country}`}
+                  h="173px"
+                  w="100%"
+                  fit="cover"
+                />
+                <Flex
+                  justify="space-between"
+                  alignItems="center"
+                  p="6"
+                  border="1px"
+                  borderColor="yellow.300"
+                  borderTop="0"
+                  borderBottomRadius="4px"
+                >
+                  <Box>
+                    <Heading fontSize="xl" fontWeight="semibold">
+                      {city.name}
+                    </Heading>
+                    <Text fontSize="md" mt="3" color="gray.700">
+                      {city.country}
+                    </Text>
+                  </Box>
+                  <Image
+                    src={`https://flagcdn.com/${city.countryCode}.svg`}
+                    alt="sdadsa"
+                    h="30px"
+                    w="30px"
+                    fit="cover"
+                    borderRadius="100%"
+                  />
+                </Flex>
+              </Box>
+            ))}
+          </SimpleGrid>
         </Flex>
       </Flex>
     </>
@@ -114,7 +172,7 @@ export const getStaticProps: GetStaticProps<ContinentPageProps> = async ({
   const { slug } = params;
 
   const { data: continents } = await api.get<Continent[]>("/continents", {
-    params: { slug },
+    params: { slug, _embed: "cities" },
   });
 
   if (continents.length === 0) {

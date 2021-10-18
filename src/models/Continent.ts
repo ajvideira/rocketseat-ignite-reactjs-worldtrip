@@ -7,5 +7,11 @@ export type Continent = {
   slug: string;
   countries: number;
   languages: number;
-  topCities: number;
+  cities: {
+    id: number;
+    name: string;
+    country: string;
+    countryCode: string;
+    image: string;
+  }[];
 };

@@ -55,5 +55,168 @@
       "languages": 1250,
       "topCities": 4
     }
+  ],
+  "cities": [
+    {
+      "id": 1,
+      "name": "Hong Kong",
+      "country": "China",
+      "countryCode": "hk",
+      "image": "https://www.infomoney.com.br/wp-content/uploads/2019/06/hong-kong-lojas.jpg?fit=900%2C612&quality=50&strip=all",
+      "continentId": 4
+    },
+    {
+      "id": 2,
+      "name": "Bangcoc",
+      "country": "Tailândia",
+      "countryCode": "th",
+      "image": "https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-bangkok-capa2019-04-820x430.jpg",
+      "continentId": 4
+    },
+
+    {
+      "id": 3,
+      "name": "Londres",
+      "country": "Reino Unido",
+      "countryCode": "gb",
+      "image": "https://www.globalactivestudy.com/wp-content/uploads/2018/05/london-848x548.jpg",
+      "continentId": 1
+    },
+    {
+      "id": 4,
+      "name": "Macau",
+      "country": "China",
+      "countryCode": "mo",
+      "image": "https://ogimg.infoglobo.com.br/in/24229351-f17-0f6/FT1086A/xGettyImages-1003381280.jpg.pagespeed.ic.TlNv9nMrEx.jpg",
+      "continentId": 4
+    },
+    {
+      "id": 5,
+      "name": "Singapura",
+      "country": "Singapura",
+      "countryCode": "sg",
+      "image": "https://exame.com/wp-content/uploads/2016/09/size_960_16_9_supertrees-singapura5.jpg?quality=70&strip=info",
+      "continentId": 4
+    },
+    {
+      "id": 6,
+      "name": "Paris",
+      "country": "França",
+      "countryCode": "fr",
+      "image": "https://viagemeturismo.abril.com.br/wp-content/uploads/2016/11/thinkstockphotos-4549879531.jpeg?quality=70&strip=info&w=680&h=453&crop=1",
+      "continentId": 1
+    },
+    {
+      "id": 7,
+      "name": "Dubai",
+      "country": "Emirados Árabes Unidos",
+      "countryCode": "ae",
+      "image": "https://www.capricetour.com.br/painel/fotos/5583438621.jpg",
+      "continentId": 4
+    },
+    {
+      "id": 8,
+      "name": "Nova York",
+      "country": "Estados Unidos",
+      "countryCode": "us",
+      "image": "https://miriangasparin.com.br/wp-content/uploads/2015/07/Nova-Iorque.jpg",
+      "continentId": 3
+    },
+    {
+      "id": 9,
+      "name": "Kuala Lumpur",
+      "country": "Malásia",
+      "countryCode": "my",
+      "image": "https://cdn2.civitatis.com/malasia/kuala-lumpur/galeria/header/skyline-nocturno-kuala-lumpur.jpg",
+      "continentId": 4
+    },
+    {
+      "id": 10,
+      "name": "Istambul",
+      "country": "Turquia",
+      "countryCode": "tr",
+      "image": "https://terrasantaviagens.com.br/wp-content/uploads/2018/06/1-35.png",
+      "continentId": 4
+    },
+    {
+      "id": 11,
+      "name": "Délhi",
+      "country": "Índia",
+      "countryCode": "in",
+      "image": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0a/f6/ee/7d.jpg",
+      "continentId": 4
+    },
+    {
+      "id": 12,
+      "name": "Antália",
+      "country": "Turquia",
+      "countryCode": "tr",
+      "image": "https://media-cdn.tripadvisor.com/media/photo-s/1a/ad/8e/58/antalya-6.jpg",
+      "continentId": 4
+    },
+    {
+      "id": 13,
+      "name": "Shenzhen",
+      "country": "China",
+      "countryCode": "cn",
+      "image": "https://www.viajali.com.br/wp-content/uploads/2020/01/shenzhen-capa.jpg",
+      "continentId": 4
+    },
+    {
+      "id": 14,
+      "name": "Mumbai",
+      "country": "Índia",
+      "countryCode": "in",
+      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/4e/55/e6/chhatrapati-shivaji-terminus.jpg?w=700&h=500&s=1",
+      "continentId": 4
+    },
+    {
+      "id": 15,
+      "name": "Phuket",
+      "country": "Tailândia",
+      "countryCode": "th",
+      "image": "https://www.costacruzeiros.com/content/dam/costa/costa-magazine/articles-magazine/islands/phuket-island/phuket_m.jpg.image.694.390.low.jpg",
+      "continentId": 4
+    },
+    {
+      "id": 16,
+      "name": "Roma",
+      "country": "Itália",
+      "countryCode": "it",
+      "image": "https://www.romapravoce.com/wp-content/uploads/2016/04/roma-em-mar%C3%A7o-696x522.jpg",
+      "continentId": 1
+    },
+    {
+      "id": 17,
+      "name": "Tóquio",
+      "country": "Japãp",
+      "countryCode": "jp",
+      "image": "https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-tokyo-capa2019-01-820x430.jpg",
+      "continentId": 4
+    },
+    {
+      "id": 18,
+      "name": "Pattaya",
+      "country": "Tailândia",
+      "countryCode": "th",
+      "image": "https://www.brasileiraspelomundo.com/wp-content/uploads/2018/08/Captura-de-Tela-2018-08-17-%C3%A0s-11.37.26.png",
+      "continentId": 4
+    },
+    {
+      "id": 19,
+      "name": "Taipei",
+      "country": "Taiwan",
+      "countryCode": "tw",
+      "image": "https://www.viajali.com.br/wp-content/uploads/2020/01/taipei-0.png",
+      "continentId": 4
+    },
+    {
+      "id": 20,
+      "name": "Meca",
+      "country": "Arábia Saudita",
+      "countryCode": "sa",
+      "image": "https://s2.glbimg.com/oNBLDSn2hbIMn25RNOlGFwGEnH4=/0x0:3500x2334/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2018/z/5/Ak6aNaShAbmup3whsUjg/meca.jpg",
+      "continentId": 4
+    }
   ]
 }

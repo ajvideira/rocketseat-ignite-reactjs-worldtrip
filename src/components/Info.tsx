@@ -1,4 +1,4 @@
-import { Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import { ReactNode } from "react";
 
 type InfoProps = {
@@ -20,14 +20,14 @@ export function Info({ children, title, value }: InfoProps) {
       >
         {value}
       </Text>
-      <Text
+      <Box
         fontSize={["lg", "lg", "2xl"]}
         fontWeight={{ lg: "semibold" }}
         color="gray.600"
       >
         {title}
         {children}
-      </Text>
+      </Box>
     </Flex>
   );
 }

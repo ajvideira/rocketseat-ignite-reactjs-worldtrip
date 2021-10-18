@@ -15,16 +15,8 @@ export const theme = extendTheme({
       "50": "#F5F8FA",
     },
     yellow: {
-      "900": "#FFD600",
       "800": "#FFBA08",
-      "700": "#FFF2C1",
-      "600": "#FFF5D2",
-      "500": "#FFF8E2",
-      "400": "#FFFBE6",
-      "300": "#FFFEEA",
-      "200": "#FFFDF4",
-      "100": "#FFFEF9",
-      "50": "#FFFFFF",
+      "300": "rgba(255, 186, 8, 0.5)",
     },
   },
   fonts: {
