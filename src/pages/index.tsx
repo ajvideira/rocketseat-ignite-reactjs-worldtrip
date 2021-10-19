@@ -1,9 +1,11 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
+import { GetStaticProps } from "next";
+
 import { Characteristics } from "../components/Characteristics";
 import { Carousel } from "../components/Carousel";
 import { Banner } from "../components/Banner";
 import { Header } from "../components/Header";
-import { GetStaticProps } from "next";
+
 import { Continent } from "../models/Continent";
 import { api } from "../services/api";
 

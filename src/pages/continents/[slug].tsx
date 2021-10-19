@@ -1,14 +1,15 @@
 import { Flex, SimpleGrid, Text } from "@chakra-ui/react";
+import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
 
+import { Continent } from "../../models/Continent";
+import { api } from "../../services/api";
+
+import { Popover100Cities } from "../../components/Popover100Cities";
 import { ContinentBanner } from "../../components/ContinentBanner";
+import { Cities } from "../../components/Cities";
 import { Header } from "../../components/Header";
 import { Info } from "../../components/Info";
-import { Continent } from "../../models/Continent";
-import { GetStaticPaths, GetStaticProps } from "next";
-import { api } from "../../services/api";
-import { Popover100Cities } from "../../components/Popover100Cities";
-import { Cities } from "../../components/Cities";
 
 type ContinentPageProps = {
   continent: Continent;
@@ -78,12 +79,16 @@ export const getStaticProps: GetStaticProps<ContinentPageProps> = async ({
   params,
 }) => {
   const { slug } = params;
+  try {
+    const { data: continent } = await api.get<Continent>(`/continents/${slug}`);
 
-  const { data: continents } = await api.get<Continent[]>("/continents", {
-    params: { slug, _embed: "cities" },
-  });
-
-  if (continents.length === 0) {
+    return {
+      props: {
+        continent,
+      },
+      revalidate: 1 * 60 * 60 * 24, //1 day
+    };
+  } catch (error) {
     return {
       redirect: {
         destination: "/",
@@ -91,11 +96,4 @@ export const getStaticProps: GetStaticProps<ContinentPageProps> = async ({
       },
     };
   }
-
-  return {
-    props: {
-      continent: continents[0],
-    },
-    revalidate: 1 * 60 * 60 * 24, //1 day
-  };
 };

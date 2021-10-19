@@ -8,8 +8,7 @@
       "image": "europe2.jpg",
       "slug": "europa",
       "countries": 50,
-      "languages": 234,
-      "topCities": 27
+      "languages": 234
     },
     {
       "id": 2,
@@ -19,8 +18,7 @@
       "image": "africa2.jpg",
       "slug": "africa",
       "countries": 54,
-      "languages": 2110,
-      "topCities": 3
+      "languages": 2110
     },
     {
       "id": 3,
@@ -30,8 +28,7 @@
       "image": "america2.jpg",
       "slug": "america",
       "countries": 35,
-      "languages": 993,
-      "topCities": 13
+      "languages": 993
     },
     {
       "id": 4,
@@ -41,8 +38,7 @@
       "image": "asia2.jpg",
       "slug": "asia",
       "countries": 50,
-      "languages": 2322,
-      "topCities": 53
+      "languages": 2322
     },
     {
       "id": 5,
@@ -52,8 +48,7 @@
       "image": "oceania2.jpg",
       "slug": "oceania",
       "countries": 16,
-      "languages": 1250,
-      "topCities": 4
+      "languages": 1250
     }
   ],
   "cities": [

@@ -29,10 +29,9 @@ This project was developed with the technologies above:
 - [Emotion](https://emotion.sh)
 - [Framer Motion](https://framer.com/motion)
 - [react-icons](https://react-icons.github.io/react-icons)
-- [axios](https://axios-http.com)
-- [json-sever](https://github.com/typicode/json-server)
-- [swiper](https://swiperjs.com)
-- [sass](https://sass-lang.com)
+- [Axios](https://axios-http.com)
+- [Swiper](https://swiperjs.com)
+- [Sass](https://sass-lang.com)
 
 ## 🔖 Layout
 
@@ -42,7 +41,7 @@ You can view the project layout through [this link](https://www.figma.com/file/V
 
 - Clone the repository
 - Install de dependencies with `yarn`
-- run the server with `yarn server`
+- Rename file `.env.example` to `.env.local`
 - Run the application with `yarn dev`
 - Access [`localhost:3000`](http://localhost:3000) in your browser
 
