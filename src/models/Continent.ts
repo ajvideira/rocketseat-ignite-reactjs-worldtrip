@@ -1,3 +1,5 @@
+import { City } from "./City";
+
 export type Continent = {
   id: number;
   name: string;
@@ -7,11 +9,5 @@ export type Continent = {
   slug: string;
   countries: number;
   languages: number;
-  cities: {
-    id: number;
-    name: string;
-    country: string;
-    countryCode: string;
-    image: string;
-  }[];
+  cities: City[];
 };
