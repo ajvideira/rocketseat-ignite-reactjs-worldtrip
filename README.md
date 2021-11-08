@@ -14,6 +14,10 @@
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=069446&labelColor=000000">
 </p>
 
+<img align="center" src=".github/images/worldtrip-project.png" alt="Worldtrip" />
+<br />
+<br />
+
 ## 💻 Project
 
 This is the Seventh challenge of ReactJS track of Ignite course from [Rocketseat](https://rocketseat.com.br/).
